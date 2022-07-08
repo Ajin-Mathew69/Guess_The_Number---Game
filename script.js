@@ -50,3 +50,18 @@ document.querySelector(".check").addEventListener("click", function () {
     }
   }
 });
+//again
+document.querySelector(".again").addEventListener("click", function () {
+  secretNmber = Math.trunc(Math.random() * 20) + 1;
+  console.log(secretNmber);
+  score = 20;
+
+  document.querySelector(".secret-number").textContent = "?";
+  document.querySelector(".guess").textContent = " ";
+  document.querySelector(".message").textContent = "Start Guessing...";
+  document.querySelector(".score").textContent = score;
+
+  document.querySelector("body").style.backgroundColor = "rgb(37, 37, 37)";
+
+  document.querySelector(".secret-number").style.width = "15rem";
+});
